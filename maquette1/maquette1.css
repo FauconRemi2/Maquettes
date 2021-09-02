@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
+body {
+  max-width: 1150px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header li {
+  list-style: none;
+  display: inline-block;
+}
+header .reseaux {
+  margin-top: 13px;
+}
+
+.black {
+  color: black;
+}
+
+a {
+  color: #9f9f9f;
+  text-decoration: none;
+  padding: 20px;
+}
+a:hover {
+  color: black;
+}
+
+.image {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.articles {
+  width: 80%;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  margin: 20px;
+}
+.articles article {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 60px 0;
+}
+.articles article .date {
+  color: rgba(0, 0, 0, 0.6);
+}
+.articles article img {
+  height: 203px;
+  width: 100%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.articles article h2 {
+  font-family: cardo;
+}
+
+.categories {
+  margin-top: 30px;
+}
+.categories .categorie ul {
+  padding: 0;
+}
+.categories .categorie ul li {
+  list-style: none;
+}
+.categories .categorie:nth-of-type(1) {
+  border-bottom: 2px solid #9f9f9f;
+}
+
+@media screen and (max-width: 1150px) {
+  main {
+    display: block;
+  }
+
+  .articles {
+    margin: 0 auto;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0.26%, rgba(0, 0, 0, 0) 9.39%);
+  }
+  .categories .categorie {
+    padding: 10px 60px;
+  }
+  .categories .categorie:first-of-type {
+    border-right: 2px solid gray;
+    border-bottom: 0;
+  }
+}
+@media screen and (max-width: 920px) {
+  header {
+    display: block;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul {
+    padding: 0;
+  }
+  header nav a {
+    padding: 20px 10px;
+  }
+  header .reseaux {
+    display: flex;
+    justify-content: center;
+  }
+
+  .articles {
+    margin: 0;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .articles article {
+    display: block;
+    position: relative;
+  }
+  .articles article h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .articles article .date {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin: 0;
+  }
+  .articles article img {
+    margin-right: 0;
+    margin-top: 45px;
+  }
+
+  .categories {
+    display: block;
+    padding-top: 50px;
+  }
+  .categories .categorie {
+    padding: 0;
+    text-align: center;
+  }
+  .categories .categorie a {
+    display: block;
+    padding: 10px 0;
+  }
+  .categories .categorie:nth-of-type(1) {
+    border-bottom: 2px solid gray;
+    border-right: 0;
+  }
+}
+
+/*# sourceMappingURL=maquette1.css.map */
