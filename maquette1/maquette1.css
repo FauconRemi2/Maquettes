@@ -1,3 +1,10 @@
+/* --- TABLE DES STYLES --- */
+/* header                   */
+/* styles global & main     */
+/* articles                 */
+/* categories               */
+/* media query              */
+/* ------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
 body {
@@ -6,11 +13,15 @@ body {
   font-size: 16px;
 }
 
+/* header */
 header {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+header ul {
+  padding: 0;
 }
 header li {
   list-style: none;
@@ -20,6 +31,7 @@ header .reseaux {
   margin-top: 0.9em;
 }
 
+/* styles global & main */
 .black {
   color: black;
 }
@@ -36,7 +48,7 @@ a:hover {
 
 .image {
   width: 100%;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -47,6 +59,7 @@ main {
   justify-content: space-around;
 }
 
+/* articles */
 .articles {
   width: 80%;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
@@ -54,15 +67,18 @@ main {
 }
 .articles article {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin: 3.75em 0;
+}
+.articles article div {
+  max-width: 600px;
 }
 .articles article .date {
   color: rgba(0, 0, 0, 0.6);
 }
 .articles article img {
-  width: 100%;
+  max-width: 250px;
   object-fit: cover;
   margin-right: 1.25em;
 }
@@ -70,9 +86,14 @@ main {
   font-family: cardo;
 }
 
+/* categories */
 aside {
+  position: relative;
   margin-top: 1.8em;
   width: 400px;
+}
+aside .categorie h2 {
+  margin-left: 20px;
 }
 aside .categorie ul {
   padding: 0;
@@ -80,17 +101,24 @@ aside .categorie ul {
 aside .categorie ul li {
   list-style: none;
 }
-aside .categorie:nth-of-type(1) {
-  border-bottom: 2px solid #9f9f9f;
+aside .categorie:first-of-type:after {
+  position: absolute;
+  content: "";
+  background-color: #9F9F9F;
+  width: 10em;
+  height: 1px;
+  left: 1em;
+  top: 425px;
 }
 
+/* media query */
 @media screen and (max-width: 1150px) {
   main {
     display: block;
   }
 
   .articles {
-    margin: 0 auto;
+    width: 100%;
   }
 
   aside {
@@ -102,9 +130,14 @@ aside .categorie:nth-of-type(1) {
   aside .categorie {
     padding: 0.7em 3.75em;
   }
-  aside .categorie:first-of-type {
-    border-right: 2px solid gray;
-    border-bottom: 0;
+  aside .categorie:first-of-type::after {
+    position: absolute;
+    content: "";
+    background-color: #9F9F9F;
+    width: 1px;
+    height: 18em;
+    left: 50%;
+    top: 20%;
   }
 }
 @media screen and (max-width: 920px) {
@@ -123,6 +156,33 @@ aside .categorie:nth-of-type(1) {
     justify-content: center;
   }
 
+  .image {
+    height: 200px;
+  }
+
+  aside {
+    display: block;
+    padding-top: 3.3em;
+  }
+  aside .categorie {
+    padding: 0;
+    text-align: center;
+  }
+  aside .categorie a {
+    display: block;
+    padding: 0.7em 0;
+  }
+  aside .categorie:first-of-type::after {
+    position: absolute;
+    content: "";
+    background-color: #9F9F9F;
+    width: 18em;
+    height: 1px;
+    left: 33%;
+    top: 55%;
+  }
+}
+@media screen and (max-width: 780px) {
   .articles {
     margin: 0;
     width: 95%;
@@ -131,6 +191,12 @@ aside .categorie:nth-of-type(1) {
   .articles article {
     display: block;
     position: relative;
+  }
+  .articles article img {
+    max-width: 780px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
   .articles article h2 {
     position: absolute;
@@ -148,29 +214,66 @@ aside .categorie:nth-of-type(1) {
   .articles article img {
     margin-right: 0;
     margin-top: 2.9em;
-    height: 200px;
   }
 
-  aside {
-    display: block;
-    padding-top: 3.3em;
+  aside .categorie:first-of-type::after {
+    position: absolute;
+    content: "";
+    background-color: #9F9F9F;
+    width: 18em;
+    height: 1px;
+    left: 31%;
+    top: 55%;
   }
-  aside .categorie {
-    padding: 0;
-    text-align: center;
+}
+@media screen and (max-width: 620px) {
+  aside .categorie:first-of-type::after {
+    position: absolute;
+    content: "";
+    background-color: #9F9F9F;
+    width: 18em;
+    height: 1px;
+    left: 26%;
+    top: 55%;
   }
-  aside .categorie a {
-    display: block;
-    padding: 0.7em 0;
-  }
-  aside .categorie:nth-of-type(1) {
-    border-bottom: 2px solid gray;
-    border-right: 0;
+}
+@media screen and (max-width: 500px) {
+  aside .categorie:first-of-type::after {
+    position: absolute;
+    content: "";
+    background-color: #9F9F9F;
+    width: 18em;
+    height: 1px;
+    left: 22%;
+    top: 55%;
   }
 }
 @media screen and (max-width: 420px) {
+  .image {
+    height: 150px;
+  }
+
   p, a {
     font-size: 14px;
+  }
+
+  aside .categorie:first-of-type::after {
+    position: absolute;
+    content: "";
+    background-color: #9F9F9F;
+    width: 18em;
+    height: 1px;
+    left: 12%;
+    top: 55%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .articles article img {
+    margin-top: 5.1em;
+  }
+  .articles article .date {
+    top: 3em;
+    left: 0;
   }
 }
 
