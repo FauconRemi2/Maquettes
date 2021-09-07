@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
 body {
-  max-width: 1150px;
   margin: 0 auto;
   font-family: Montserrat;
   font-size: 16px;
 }
 
 header {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -16,7 +17,7 @@ header li {
   display: inline-block;
 }
 header .reseaux {
-  margin-top: 13px;
+  margin-top: 0.9em;
 }
 
 .black {
@@ -24,9 +25,10 @@ header .reseaux {
 }
 
 a {
+  display: inline-block;
   color: #9f9f9f;
   text-decoration: none;
-  padding: 20px;
+  padding: 1.25em;
 }
 a:hover {
   color: black;
@@ -34,9 +36,13 @@ a:hover {
 
 .image {
   width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 main {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
@@ -44,37 +50,37 @@ main {
 .articles {
   width: 80%;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
-  margin: 20px;
+  margin: 1.25em;
 }
 .articles article {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 60px 0;
+  margin: 3.75em 0;
 }
 .articles article .date {
   color: rgba(0, 0, 0, 0.6);
 }
 .articles article img {
-  height: 203px;
   width: 100%;
   object-fit: cover;
-  margin-right: 20px;
+  margin-right: 1.25em;
 }
 .articles article h2 {
   font-family: cardo;
 }
 
-.categories {
-  margin-top: 30px;
+aside {
+  margin-top: 1.8em;
+  width: 400px;
 }
-.categories .categorie ul {
+aside .categorie ul {
   padding: 0;
 }
-.categories .categorie ul li {
+aside .categorie ul li {
   list-style: none;
 }
-.categories .categorie:nth-of-type(1) {
+aside .categorie:nth-of-type(1) {
   border-bottom: 2px solid #9f9f9f;
 }
 
@@ -87,15 +93,16 @@ main {
     margin: 0 auto;
   }
 
-  .categories {
+  aside {
+    width: 100%;
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0.26%, rgba(0, 0, 0, 0) 9.39%);
   }
-  .categories .categorie {
-    padding: 10px 60px;
+  aside .categorie {
+    padding: 0.7em 3.75em;
   }
-  .categories .categorie:first-of-type {
+  aside .categorie:first-of-type {
     border-right: 2px solid gray;
     border-bottom: 0;
   }
@@ -110,9 +117,6 @@ main {
   }
   header nav ul {
     padding: 0;
-  }
-  header nav a {
-    padding: 20px 10px;
   }
   header .reseaux {
     display: flex;
@@ -137,30 +141,36 @@ main {
   }
   .articles article .date {
     position: absolute;
-    top: 5px;
+    top: 0.3em;
     right: 0;
     margin: 0;
   }
   .articles article img {
     margin-right: 0;
-    margin-top: 45px;
+    margin-top: 2.9em;
+    height: 200px;
   }
 
-  .categories {
+  aside {
     display: block;
-    padding-top: 50px;
+    padding-top: 3.3em;
   }
-  .categories .categorie {
+  aside .categorie {
     padding: 0;
     text-align: center;
   }
-  .categories .categorie a {
+  aside .categorie a {
     display: block;
-    padding: 10px 0;
+    padding: 0.7em 0;
   }
-  .categories .categorie:nth-of-type(1) {
+  aside .categorie:nth-of-type(1) {
     border-bottom: 2px solid gray;
     border-right: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  p, a {
+    font-size: 14px;
   }
 }
 

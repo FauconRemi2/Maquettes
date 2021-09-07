@@ -4,6 +4,9 @@
     padding: 0;
     font-family: Montserrat;
 }
+body{
+    width: 100vw;
+}
 header{
     max-width: 1150px;
     margin: 0 auto;
@@ -51,12 +54,10 @@ header{
         height: 100%;
         background-color: #EFF8ED;
         position: relative;
-        padding-left: 100px;
-        padding-top: 60px;
-        padding-bottom: 100px;
+        padding: 100px 60px;
         .blanc{
             width: 40%;
-            height: 70%;
+            height: 300px;
             background-color: white;
             border-radius: 0 0 0 100px;
             position: absolute;
@@ -70,6 +71,7 @@ header{
             font-weight: bolder;
             margin: 30px 0;
             font-size: 58px;
+            width: 55%;
         }
         h4{
             font-size: 20px;
@@ -99,15 +101,18 @@ header{
     }
     .ex{
         position: absolute;
-        top: 560px;
-        width: 1150px;
+        top: 530px;
+        max-width: 1150px;
+        width: 100%;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         background-color: rgba($color: #000000, $alpha: 0);
         .section{
             background-color: white;
             width: 250px;
             height: 220px;
+            margin-top: 30px;
             padding: 30px;
             box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
             h3{
@@ -185,11 +190,13 @@ main{
             width: 95%;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin-top: 50px;
             .article{
-                width: 25%;
+                width: 240px;
+                margin-top: 30px;
                 .articletxt{
-                    width: 82%;
+                    width: 85%;
                     margin: 0 auto;
                     *{
                         margin-top: 15px;
@@ -328,8 +335,9 @@ footer{
     background-color: white;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     .navF{
-        width: 15%;
+        width: 175px;
         margin-top: 40px;
         h5{
             font-size: 16px;
@@ -347,7 +355,7 @@ footer{
         }
     }
     .derNav{
-        width: 25%;
+        width: 300px;
         h6{
             color: #737373;
             font-size: 14px;
@@ -382,4 +390,67 @@ footer{
 .flex2{
     display: flex;
     justify-content: start;
+}
+@media screen and (max-width: 1110px) {
+    main{
+        .OET{
+            form{
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 929px) {
+    header{
+        .ex{
+            top: 620px;
+        }
+    }
+    main{
+        .AP{
+            flex-wrap: wrap;
+            &:first-of-type{
+                padding-top: 580px;
+            }
+            .video{
+                margin: 0;
+                width: auto;
+            }
+        }
+        .OET{
+            form{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 745px) {
+    main{
+        .OET{
+            padding: 100px 30px;
+        }
+    }
+}
+@media screen and (max-width: 685px) {
+    header{
+        .head{
+            h3{
+            display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 619px) {
+    main{
+        .AP:first-of-type{
+            padding-top: 850px;
+        }
+        .OET{
+            form{
+                input[type="email"]{
+                    width: 65%;
+                }
+            }
+        }
+    }
 }

@@ -5,6 +5,10 @@
   font-family: Montserrat;
 }
 
+body {
+  width: 100vw;
+}
+
 header {
   max-width: 1150px;
   margin: 0 auto;
@@ -53,13 +57,11 @@ header .vert {
   height: 100%;
   background-color: #EFF8ED;
   position: relative;
-  padding-left: 100px;
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding: 100px 60px;
 }
 header .vert .blanc {
   width: 40%;
-  height: 70%;
+  height: 300px;
   background-color: white;
   border-radius: 0 0 0 100px;
   position: absolute;
@@ -73,6 +75,7 @@ header .vert h1 {
   font-weight: bolder;
   margin: 30px 0;
   font-size: 58px;
+  width: 55%;
 }
 header .vert h4 {
   font-size: 20px;
@@ -101,16 +104,19 @@ header .vert img {
 }
 header .ex {
   position: absolute;
-  top: 560px;
-  width: 1150px;
+  top: 530px;
+  max-width: 1150px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0);
 }
 header .ex .section {
   background-color: white;
   width: 250px;
   height: 220px;
+  margin-top: 30px;
   padding: 30px;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 }
@@ -188,13 +194,15 @@ main .VILA .achat {
   width: 95%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 main .VILA .achat .article {
-  width: 25%;
+  width: 240px;
+  margin-top: 30px;
 }
 main .VILA .achat .article .articletxt {
-  width: 82%;
+  width: 85%;
   margin: 0 auto;
 }
 main .VILA .achat .article .articletxt * {
@@ -322,9 +330,10 @@ footer .body {
   background-color: white;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 footer .body .navF {
-  width: 15%;
+  width: 175px;
   margin-top: 40px;
 }
 footer .body .navF h5 {
@@ -342,7 +351,7 @@ footer .body .navF a {
   text-decoration: none;
 }
 footer .body .derNav {
-  width: 25%;
+  width: 300px;
 }
 footer .body .derNav h6 {
   color: #737373;
@@ -375,6 +384,49 @@ footer .foot .resaux img {
 .flex2 {
   display: flex;
   justify-content: start;
+}
+
+@media screen and (max-width: 1110px) {
+  main .OET form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 929px) {
+  header .ex {
+    top: 620px;
+  }
+
+  main .AP {
+    flex-wrap: wrap;
+  }
+  main .AP:first-of-type {
+    padding-top: 580px;
+  }
+  main .AP .video {
+    margin: 0;
+    width: auto;
+  }
+  main .OET form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 745px) {
+  main .OET {
+    padding: 100px 30px;
+  }
+}
+@media screen and (max-width: 685px) {
+  header .head h3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 619px) {
+  main .AP:first-of-type {
+    padding-top: 850px;
+  }
+  main .OET form input[type=email] {
+    width: 65%;
+  }
 }
 
 /*# sourceMappingURL=maquette2.css.map */
