@@ -1,0 +1,490 @@
+@font-face {
+    font-family: "HKGrotesk-medium";
+    src: url("../../src/font/HKGrotesk-Medium.otf") format("opentype");
+   }
+@font-face {
+    font-family: "SF'UI Text";
+    src: url("../../src/Font/SFUIText-Regular.ttf") format("opentype");
+}
+@font-face {
+    font-family: "Hack-Regular";
+    src: url("../../src/Font/Hack-Regular.ttf") format("opentype");
+}
+
+*{   
+    margin: 0;
+    padding: 0; 
+}
+
+h1, h2, h3, h4{
+    font-family: "HKGrotesk-medium";
+}
+
+p, a{
+    font-family: "SF'UI Text";
+}
+
+header{
+    background-color: #151B2B;
+    padding: 3rem;
+    .header{
+        position: relative;
+        max-width: 80rem;
+        margin: 0 auto;
+        .logoQ{
+            position: absolute;
+            top: 2rem;
+            left: 10rem;
+        }
+    }
+    h1, h3, p{
+        color: white;
+    }
+    .titregit{
+        display: flex;
+        justify-content: space-between;
+    }
+    .headerBody{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 80rem;
+    }
+    .textHeader{
+        margin: auto;
+        width: 400px;
+        h1, h3, iframe{
+            margin: 1.5rem 0;
+        }
+        .titregit{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    .boutons{
+        display: flex;
+        justify-content: space-between;
+        max-width: 370px;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+        a{
+            img{
+                height: 0.8rem;
+                margin-right: 0.5rem;
+            }
+            display: inline-block;
+            padding: 1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+            &:first-of-type{
+                background-color: #454658;
+            }
+            &:last-of-type{
+                background-color: #6578C0;
+            }
+        }
+    }
+}
+body{
+    background-color: #F9F9FD;
+}
+main{
+    margin: 0 auto;
+    .articlesolo{
+        text-align: center;
+        img{
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        h2, p{
+            color: #454658;
+        }
+        h2{
+            padding-top: 8rem;
+        }
+        p{
+            margin: 3rem auto;
+            width: 50rem;
+            max-width: 100%;
+        }
+        .usage{
+            position: relative;
+            .UText{
+                position: absolute;
+                left: 39vw;
+                top: -25px;
+                width: 36rem;
+            }
+        }
+        .code{
+            margin: 0 auto;
+            text-align: left;
+            width: 60rem;
+            max-width: 100%;
+            background-color: white;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 3px;
+            a{
+                display: inline-block;
+                padding: 0.5rem 0.8rem;
+                background-color: #5D64D2;
+                text-decoration: none;
+                color: white;
+                margin: 1.5rem;
+                border-radius: 4px;
+            }
+            div{
+                height: 16px;
+            }
+        }
+        code{
+            margin-left: 20px;
+            font-family: Hack-Regular;
+            display: block;
+            &:last-of-type{
+                padding-bottom: 20px;
+            }
+        }
+        .tab{
+            margin-left: 50px;
+        }
+        .bleu{
+            color: #676ED5;
+        }
+        .commentaire{
+            color: #C3C3D4;
+        }
+        .opperateur{
+            color: #BB74F2;
+        }
+        .orange{
+            color: #FF896F;
+        }
+        .t{
+            color: #8ADDE5;
+        }
+        .boutons{
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem auto;
+            max-width: 370px;
+            flex-wrap: wrap;
+            a{
+                img{
+                    height: 0.8rem;
+                    margin-right: 0.5rem;
+                }
+                margin-top: 1.5rem;
+                display: inline-block;
+                padding: 1rem;
+                color: white;
+                text-decoration: none;
+                border-radius: 4px;
+                &:first-of-type{
+                    background-color: #454658;
+                }
+                &:last-of-type{
+                    background-color: #6578C0;
+                }
+            }
+        }
+    }
+    .articles{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 90px auto 0 auto;
+        article{
+            .atexte{
+                margin-right: 10px;
+            }
+            &:nth-of-type(2){
+                img{
+                    height: 140px;
+                }
+            }
+        }
+        article{
+            &:nth-of-type(1){
+                a{
+                
+                    display: inline-block;
+                    margin-top: 3rem;
+                }
+            }
+            &:nth-of-type(4){
+                a{
+                    display: inline-block;
+                    margin-top: 5.3rem;
+                }
+            }
+            width: 400px;
+            margin-bottom: 50px;
+        }
+        h3, p{
+            color: #454658;
+            margin: 2rem 0;
+        }
+        a{
+            text-decoration: none;
+            color: #5D64D2;
+        }
+    }
+    h2{
+        text-align: center;
+        color: #454658;
+        margin: 0 auto;
+    }
+}
+footer{
+    margin-top: 7rem;
+    background-color: #151B2B;
+    iframe{
+        margin: 2.5rem;
+    }
+    .footerA{
+        max-width: 80rem; 
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+    .logoQ{
+            position: absolute;
+            width: 100px;
+            top: 2rem;
+            left: 6rem;
+        }
+    .footerB{
+        width: 21rem;
+        position: relative;
+        height: min-content;
+        p{ 
+            margin: 2rem 0;
+            color: lightgray;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: 1px solid lightgray;
+        }
+    }
+    .footerB, nav{
+        margin-top: 50px;
+    }
+    nav{
+        width: 130px;
+        margin: 0 10px;
+        h4{
+            color: white;
+            margin-bottom: 2rem;
+        }
+        a{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        display: inline-block;
+        }
+        li{
+            list-style: none;
+        }
+    }
+    .navs{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .nav{
+        max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .foot{
+        max-width: 80rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: gray;
+        span{
+            color: lightblue;
+        }
+    }
+}
+
+@media screen and (max-width : 3100px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 41vw;
+    }
+}
+@media screen and (max-width : 2800px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 40vw;
+    }
+}
+@media screen and (max-width : 2500px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 39vw;
+    }
+}
+@media screen and (max-width : 2300px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 38vw;
+    }
+}
+@media screen and (max-width : 2100px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 37vw;
+    }
+}
+@media screen and (max-width : 1900px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 34vw;
+    }
+}
+@media screen and (max-width : 1700px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 32vw;
+    }
+}
+@media screen and (max-width : 1500px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 29vw;
+    }
+}
+@media screen and (max-width : 1400px) {
+    header .header .logoQ{
+
+        left: 12vw;
+    }
+}
+@media screen and (max-width : 1300px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 25vw;
+    }
+    header .header .logoQ{
+        left: 9vw;
+    }
+}
+@media screen and (max-width : 1200px) {
+    header .header .logoQ{
+        left: 6vw;
+    }
+}
+@media screen and (max-width : 1100px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 19vw;
+    }
+    header .header .logoQ{
+        left: 3vw;
+    }
+}
+@media screen and (max-width : 1035px) {
+    header .header .logoQ{
+        left: 0vw;
+    }
+    .imgheader{
+        display: none;
+    }
+    .navs{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width : 900px) {
+    header .header .logoQ{
+        top: 0;
+    }
+    header .headerBody{
+        padding-top: 3rem;
+    }
+    article{
+        &:last-of-type{
+            img{
+                width: inherit;
+            } 
+        }
+    }
+}
+
+
+@media screen and (max-width : 800px) {
+    article{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 14vw;
+        top: -3rem;
+    }
+}
+@media screen and (max-width : 700px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 16vw;
+        top: -4rem;
+        width: 28rem;
+    }
+}
+@media screen and (max-width : 700px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 14vw;
+        top: -6rem;
+    }
+    main .articlesolo .code{
+        overflow: auto;
+    }
+}
+@media screen and (max-width : 550px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 9vw;
+        top: -6rem;
+    }
+}
+@media screen and (max-width : 700px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 8vw;
+        top: -7rem;
+        width: 90vw;
+    }
+}
+@media screen and (max-width : 450px) {
+    main .articlesolo .usage .UText{
+        position: absolute;
+        left: 8vw;
+        top: -9rem;
+        width: 90vw;
+    }
+    article{
+        &:last-of-type{
+            img{
+                width: 100vw;
+            } 
+        }
+    }
+}

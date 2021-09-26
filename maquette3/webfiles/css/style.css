@@ -1,0 +1,481 @@
+@font-face {
+  font-family: "HKGrotesk-medium";
+  src: url("../../src/font/HKGrotesk-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF'UI Text";
+  src: url("../../src/Font/SFUIText-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Hack-Regular";
+  src: url("../../src/Font/Hack-Regular.ttf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "HKGrotesk-medium";
+}
+
+p, a {
+  font-family: "SF'UI Text";
+}
+
+header {
+  background-color: #151B2B;
+  padding: 3rem;
+}
+header .header {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+header .header .logoQ {
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+}
+header h1, header h3, header p {
+  color: white;
+}
+header .titregit {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerBody {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+header .textHeader {
+  margin: auto;
+  width: 400px;
+}
+header .textHeader h1, header .textHeader h3, header .textHeader iframe {
+  margin: 1.5rem 0;
+}
+header .textHeader .titregit {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .boutons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 370px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+header .boutons a {
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+header .boutons a img {
+  height: 0.8rem;
+  margin-right: 0.5rem;
+}
+header .boutons a:first-of-type {
+  background-color: #454658;
+}
+header .boutons a:last-of-type {
+  background-color: #6578C0;
+}
+
+body {
+  background-color: #F9F9FD;
+}
+
+main {
+  margin: 0 auto;
+}
+main .articlesolo {
+  text-align: center;
+}
+main .articlesolo img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+main .articlesolo h2, main .articlesolo p {
+  color: #454658;
+}
+main .articlesolo h2 {
+  padding-top: 8rem;
+}
+main .articlesolo p {
+  margin: 3rem auto;
+  width: 50rem;
+  max-width: 100%;
+}
+main .articlesolo .usage {
+  position: relative;
+}
+main .articlesolo .usage .UText {
+  position: absolute;
+  left: 39vw;
+  top: -25px;
+  width: 36rem;
+}
+main .articlesolo .code {
+  margin: 0 auto;
+  text-align: left;
+  width: 60rem;
+  max-width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+main .articlesolo .code a {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  background-color: #5D64D2;
+  text-decoration: none;
+  color: white;
+  margin: 1.5rem;
+  border-radius: 4px;
+}
+main .articlesolo .code div {
+  height: 16px;
+}
+main .articlesolo code {
+  margin-left: 20px;
+  font-family: Hack-Regular;
+  display: block;
+}
+main .articlesolo code:last-of-type {
+  padding-bottom: 20px;
+}
+main .articlesolo .tab {
+  margin-left: 50px;
+}
+main .articlesolo .bleu {
+  color: #676ED5;
+}
+main .articlesolo .commentaire {
+  color: #C3C3D4;
+}
+main .articlesolo .opperateur {
+  color: #BB74F2;
+}
+main .articlesolo .orange {
+  color: #FF896F;
+}
+main .articlesolo .t {
+  color: #8ADDE5;
+}
+main .articlesolo .boutons {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  max-width: 370px;
+  flex-wrap: wrap;
+}
+main .articlesolo .boutons a {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+main .articlesolo .boutons a img {
+  height: 0.8rem;
+  margin-right: 0.5rem;
+}
+main .articlesolo .boutons a:first-of-type {
+  background-color: #454658;
+}
+main .articlesolo .boutons a:last-of-type {
+  background-color: #6578C0;
+}
+main .articles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 90px auto 0 auto;
+}
+main .articles article .atexte {
+  margin-right: 10px;
+}
+main .articles article:nth-of-type(2) img {
+  height: 140px;
+}
+main .articles article {
+  width: 400px;
+  margin-bottom: 50px;
+}
+main .articles article:nth-of-type(1) a {
+  display: inline-block;
+  margin-top: 3rem;
+}
+main .articles article:nth-of-type(4) a {
+  display: inline-block;
+  margin-top: 5.3rem;
+}
+main .articles h3, main .articles p {
+  color: #454658;
+  margin: 2rem 0;
+}
+main .articles a {
+  text-decoration: none;
+  color: #5D64D2;
+}
+main h2 {
+  text-align: center;
+  color: #454658;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 7rem;
+  background-color: #151B2B;
+}
+footer iframe {
+  margin: 2.5rem;
+}
+footer .footerA {
+  max-width: 80rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+footer .logoQ {
+  position: absolute;
+  width: 100px;
+  top: 2rem;
+  left: 6rem;
+}
+footer .footerB {
+  width: 21rem;
+  position: relative;
+  height: min-content;
+}
+footer .footerB p {
+  margin: 2rem 0;
+  color: lightgray;
+}
+footer .footerB img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+footer .footerB, footer nav {
+  margin-top: 50px;
+}
+footer nav {
+  width: 130px;
+  margin: 0 10px;
+}
+footer nav h4 {
+  color: white;
+  margin-bottom: 2rem;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+footer nav li {
+  list-style: none;
+}
+footer .navs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .nav {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .foot {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: gray;
+}
+footer .foot span {
+  color: lightblue;
+}
+
+@media screen and (max-width: 3100px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 41vw;
+  }
+}
+@media screen and (max-width: 2800px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 40vw;
+  }
+}
+@media screen and (max-width: 2500px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 39vw;
+  }
+}
+@media screen and (max-width: 2300px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 38vw;
+  }
+}
+@media screen and (max-width: 2100px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 37vw;
+  }
+}
+@media screen and (max-width: 1900px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 34vw;
+  }
+}
+@media screen and (max-width: 1700px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 32vw;
+  }
+}
+@media screen and (max-width: 1500px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 29vw;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header .header .logoQ {
+    left: 12vw;
+  }
+}
+@media screen and (max-width: 1300px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 25vw;
+  }
+
+  header .header .logoQ {
+    left: 9vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .header .logoQ {
+    left: 6vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 19vw;
+  }
+
+  header .header .logoQ {
+    left: 3vw;
+  }
+}
+@media screen and (max-width: 1035px) {
+  header .header .logoQ {
+    left: 0vw;
+  }
+
+  .imgheader {
+    display: none;
+  }
+
+  .navs {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .header .logoQ {
+    top: 0;
+  }
+
+  header .headerBody {
+    padding-top: 3rem;
+  }
+
+  article:last-of-type img {
+    width: inherit;
+  }
+}
+@media screen and (max-width: 800px) {
+  article img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 14vw;
+    top: -3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 16vw;
+    top: -4rem;
+    width: 28rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 14vw;
+    top: -6rem;
+  }
+
+  main .articlesolo .code {
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 9vw;
+    top: -6rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 8vw;
+    top: -7rem;
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .articlesolo .usage .UText {
+    position: absolute;
+    left: 8vw;
+    top: -9rem;
+    width: 90vw;
+  }
+
+  article:last-of-type img {
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
